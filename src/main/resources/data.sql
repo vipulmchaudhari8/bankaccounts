@@ -6,6 +6,3 @@ insert into accounts values (40000, 'SGSaving655', 'Savings',65432, '02/12/2020'
 insert into transactions values (100, 10000, 'Savings','SGSavings726',1232,'AUD',0,'','Dec,19,2020');
 insert into transactions values (101, 10000, 'Savings','SGSavings726',600,'AUD',0,'','Dec,15,2020');
 insert into transactions values (102, 10000, 'Savings','SGSavings726',1100,'AUD',0,'','Dec,10,2020');
-
-select * from accounts;
-select * from transactions;
