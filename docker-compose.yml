@@ -2,8 +2,6 @@ version: "3"
 
 services:
   bankaccounts:
-    build: .
-    volumes:
-      - ./bankaccounts:ui\bank_ui\src
+    build: '.'
     ports:
       - "8081:8081"
