@@ -1,7 +1,12 @@
 package com.accounts.bankaccounts.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Accounts {
 
+	@Id
 	private int accountNumber;
 	private String accountName;
 	private String accountType;

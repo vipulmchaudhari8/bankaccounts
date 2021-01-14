@@ -1,7 +1,13 @@
 package com.accounts.bankaccounts.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Transactions {
 	
+	@Id
+	private int transactionID;
 	private int accountNumber;
 	private String accountType;
 	private String valueDate;
@@ -11,6 +17,12 @@ public class Transactions {
 	private String creditDebitType;
 	private String transactionNarrative;
 	
+	public int getTransactionID() {
+		return transactionID;
+	}
+	public void setTransactionID(int transactionID) {
+		this.transactionID = transactionID;
+	}	
 	public int getAccountNumber() {
 		return accountNumber;
 	}
