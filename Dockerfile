@@ -1,7 +1,9 @@
 FROM openjdk:latest
 
-ADD target/bankaccounts-0.0.1-SNAPSHOT.jar app.jar
+VOLUME /tmp
 
-ENTRYPOINT ["java","-jar","app.jar"]
+ADD target/bankaccounts-0.0.1-SNAPSHOT.jar bankaccounts-0.0.1-SNAPSHOT
+
+ENTRYPOINT ["java","-jar","bankaccounts-0.0.1-SNAPSHOT"]
 
 EXPOSE 8081
